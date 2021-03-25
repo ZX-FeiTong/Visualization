@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CARS</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    div.news{
+
+      position: absolute;
+      left: 800px;
+      top: 1500px;
+    }
+  </style>
+  <script>
+    
+  </script>
+  <script src="../p5.js"></script> 
+  <!--<script src="../addons/p5.sound.min.js"></script>-->
+  <script src="sketch cars.js"></script>
+</head>
+
+<body>
+  <!-- <h2>CARS</h2> -->
+  <div class="news" style="color: white">
+    
+
+    <form oninput="x.value=parseInt(a.value)" >mpg(圆周半径):&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="range" id="a" max="30" min="25" value="50" onblur="mpg(this)">
+    
+    :<output name="x" for="a"></output>
+    </form>
+  <p></p>
+
+    <form oninput="x.value=parseInt(a.value)">cylinders(身体节数)：&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="range" id="a" max="10" min="3" value="50" onblur="cyl(this)">
+    
+    :<output name="x" for="a"></output>
+    </form>
+    <p></p>
+    
+    <form oninput="x.value=parseInt(a.value)">displacement(身体宽度)：
+      <input type="range" id="a" max="500" min="100" value="50" onblur="dis(this)">
+      
+      :<output name="x" for="a"></output>
+      </form>
+      <p></p>
+
+    <form oninput="x.value=parseInt(a.value)">horsepower(角速度):&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <input type="range" id="a" max="200" min="45" value="50" onblur="hor(this)">
+      
+      :<output name="x" for="a"></output>
+    </form>
+    <p></p>
+
+    <form oninput="x.value=parseInt(a.value)">weight(身体半径)：&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <input type="range" id="a" max="4000" min="2000" value="50" onblur="wei(this)">
+      
+      :<output name="x" for="a"></output>
+    </form>
+    <p></p>
+
+    <form oninput="x.value=parseInt(a.value)">acceleration(角加速度)：&nbsp&nbsp
+      <input type="range" id="a" max="20" min="10" value="50" onblur="acc(this)">
+      
+      :<output name="x" for="a"></output>
+    </form>
+    <p></p>
+
+    <form oninput="x.value=parseInt(a.value)">model year(身体颜色)：&nbsp&nbsp&nbsp
+      <input type="range" id="a" max="73" min="70" value="50" onblur="mod(this)">
+      
+      :<output name="x" for="a"></output>
+    </form>
+    <p></p>
+
+    <form oninput="x.value=parseInt(a.value)">origin(眼睛)：&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <input type="range" id="a" max="3" min="1" value="50" onblur="ori(this)">
+      
+      :<output name="x" for="a"></output>
+    </form>
+  
+  
+  </div>
+</body>
+
+</html>
